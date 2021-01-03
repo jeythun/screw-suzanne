@@ -1,0 +1,293 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-shadow: 2px 2px 2px rgb(112, 112, 112);
+}
+
+header{
+    font-family: "Press Start 2P";
+}
+
+header p{
+    font-size: 1em;
+}
+
+.mainScreen{
+    position: relative;
+    height: 480px;
+    width: 480px;
+    overflow: hidden;
+}
+
+.startButton {
+    font-size: 20px;
+    width: 120px;
+    font-family: sans-serif;
+    padding: 10px;
+    background: rgb(122, 255, 166);
+    border-radius: 10px;
+    color: black;
+    border: 3px solid rgb(0, 0, 0);
+    font-weight: bold;
+    position: relative;
+    bottom: 250px;
+    box-shadow: 5px 10px 28px #888888;
+}
+
+.startButton:hover{
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+canvas{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 10px;
+    display: block;
+}
+
+.icons{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin: 20px;
+    font-size: 35px;
+    text-shadow: none;
+}
+
+.icons a{
+    color: rgb(29, 196, 101);
+}
+
+.icons a:hover{
+    color: rgb(161, 255, 161);
+}
+
+.backBox{
+    position: absolute;
+    top: 240px;
+    background-color: blanchedalmond;
+    border: 5px solid rgb(139, 79, 0);
+    border-radius: 20px;
+    width: 320px;
+    height: 220px;
+    box-shadow: 5px 10px 20px #888888;
+
+}
+
+.menuTitle{
+    font-family: "Press Start 2P";
+    color: rgb(255, 102, 0);
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    position: absolute;
+    top: 240px;
+}
+
+.charSelection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    position: absolute;
+    top: 320px;
+}
+
+.charSelection > img{
+    margin: 10px;
+    background: none;
+    border: none;
+    transition: transform .2s;
+}
+
+.charSelection > img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.endScreen {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 290px;
+    font-weight: bold;
+    top: 250px;
+}
+
+.endButtons{
+    display: flex;
+    flex-direction: column;
+    top: 370px;
+    width: 300px;
+    position: absolute;
+    text-shadow: none;
+}
+
+.endButton{
+    background-color: maroon;
+    border: 5px solid blanchedalmond;
+    border-radius: 20px;
+    padding: 7px;
+    font-family: "Press Start 2P";
+    font-size: 12px;
+    color: white;
+}
+
+.endButton:hover{
+    background-color: white;
+    border-color: maroon;
+    color: maroon;
+    cursor: pointer;
+}
+
+.finalScores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentScore, .highScore{
+    display: flex;
+    flex-direction: column;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    color: darkred;
+    position: absolute;
+    top: 300px;
+}
+
+.highScore{
+    top: 334px;
+}
+
+.show-score{
+    display: block;
+    position: absolute;
+    top: 150px;
+    font-family: "Press Start 2P";
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(71, 71, 71);
+}
+
+#show{
+    display: inline-block;
+    animation: fadeIn 1000ms;
+    -webkit-animation: fadeIn 1000ms;
+}
+
+#no-show{
+    display: none;
+}
+
+.toolbox-container{
+    position: relative;
+}
+
+.toolbox{
+    position: absolute;
+    left: 242px;
+    bottom: 397px;
+}
+
+.toolbox button{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    width: 75px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.toolbox button:hover{
+    cursor: pointer;
+}
+
+.toolbox > button{
+    position: relative;
+    z-index: 20;
+}
+
+#button-on{
+    background: rgb(0, 212, 71);
+    border: 3px solid rgb(0, 0, 0);
+}
+
+#button-on:hover{
+    color: white;
+    border-color: white;
+}
+
+#button-off {
+    background: rgb(0, 112, 37);
+    color: black;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+#button-off:hover{
+    color: white;
+    border-color: white;
+}
+
+.audio-controls{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mute-button{
+    z-index: 20;
+}
+
+.vol-slider{
+    position: absolute;
+    z-index: 10;
+    width: 0px;
+    left: 40px;
+    transition: 200ms;
+}
+
+.fps-status{
+    position: absolute;
+    opacity: 0;
+    width: 170px;
+    left: 75px;
+    bottom: 55px;
+    transition: 200ms;
+}
+
+#slide-in{
+    width: 100px;
+    left: 75px;
+}
+
+#show-status{
+    opacity: 1;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

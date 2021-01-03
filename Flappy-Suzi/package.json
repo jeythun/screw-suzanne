@@ -1,0 +1,26 @@
+{
+  "name": "flappy_bird_universe",
+  "version": "1.0.0",
+  "description": "Browser implementation of the classic Flappy Bird mobile game, with additional characters and features.",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arctive/Flappy-Bird-Universe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arctive/Flappy-Bird-Universe/issues"
+  },
+  "homepage": "https://github.com/Arctive/Flappy-Bird-Universe#readme"
+}

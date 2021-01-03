@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="image" property="og:image" content="dist/favicon/android-chrome-512x512.png">
+        <meta name="description" property="og:description" content="Browser implementation of the classic Flappy Bird mobile game, with additional characters and features.">
+        <meta name="author" content="Erick Santos">
+
+        <title>Flappy Bird Universe</title>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        
+        <script type="text/javascript" src="dist/main.js" defer></script>
+    </head>
+    
+    <header>
+        <h1 class="title">Flappy Bird Universe</h1>
+        <p>Fly between the pipes without hitting them.</p>
+        <p>Press [Left Mouse] to fly up!</p>
+    </header>
+    
+    <body>
+        <div class="mainScreen">
+            <canvas id="canvas" width="480" height="480"></canvas>
+            <button id="no-show" class="startButton">Start</button>
+        </div>
+        <div class="show-score"></div>
+        <div id="no-show" class="backBox"></div>
+        <h2  id="no-show" class="menuTitle"></h2>
+        <div id="no-show" class="charSelection"></div>
+        <div id="no-show" class="endScreen">
+            <div class="finalScores">
+                <div class="currentScore"></div>
+                <div class="highScore"></div>
+            </div>
+            <div class="endButtons">
+                <button id="restart" class="endButton">Restart</button>
+                <button id="charSelect" class="endButton">Change character</button>
+            </div>
+        </div>
+        <div class="toolbox-container">
+            <div class="toolbox"></div>
+        </div>
+    </body>
+    
+    <footer class="icons">
+        <a href="https://github.com/esantos2" target="_blank">
+            <i id="icon" class="fas fa-user"></i>
+        </a>
+        <a href="https://github.com/esantos2/Flappy-Bird-Universe" target="_blank">
+            <i id="icon" class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/erick-santos2/" target="_blank">
+            <i id="icon" class="fab fa-linkedin"></i>
+        </a>
+    </footer>
+
+</html>
